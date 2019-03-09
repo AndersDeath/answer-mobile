@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      О программе
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div text-center style="padding: 10px 0 10px 0;">
+    <img src="./assets/img/robot.svg" style="width:8rem; margin:6px">
+  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Что это?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Наверняка с вами приключалась ситуация, когда вы что-то кому то рассказываете, а собеседник награждает вас
+        односложными ответами?
+        Это приложение призвано помочь ему продолжать это делать.
+        Кроме того вы можете теперь без особого напряжения поддерживать разговор со своими детьми, мужем, женой,
+        домашним животным. Вот оно будущее! И без всяких нейронных сетей! Как тебе такое Илон Маск?
+      </p>
+    </ion-card-content>
+    <ion-card-content>
+      <p>Приложение создано в развлекательных целях. Нажимая на кнопки вы можете автоматически, не напрягаясь
+        поддерживать разговор.</p>
+    </ion-card-content>
+    <ion-card-content>
+      <p>Не забудьте включить звук!!!</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-button expand="block" fill="outline" (click)="openLink('https://github.com/AndersDeath/otvetnik')">
+    <ion-icon slot="start" name="logo-github"></ion-icon>
+    Исходники на GitHub
+  </ion-button>
+  <ion-button expand="block" fill="outline" (click)="openLink('https://www.facebook.com/andersdeath')">
+    <ion-icon slot="start" name="logo-facebook"></ion-icon>Написать автору в Фейсбук
+  </ion-button>
+  <ion-button expand="block" fill="outline" (click)="openLink('skype:vladnbol?chat')">
+    <ion-icon slot="start" name="logo-skype"></ion-icon>Написать автору в богомерзкий скайп
+  </ion-button>
+</ion-content>

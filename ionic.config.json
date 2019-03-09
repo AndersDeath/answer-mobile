@@ -1,0 +1,7 @@
+{
+  "name": "ugu",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

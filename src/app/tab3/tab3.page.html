@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Настройки
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div text-center style="padding: 10px 0 10px 0;">
+    <img src="./assets/img/settings.svg" style="width:8rem; margin:6px">
+  </div>
+  <ion-list>
+    <ion-item>
+      <ion-label>Большие кнопки</ion-label>
+      <ion-toggle color="primary" [(ngModel)]="bigButtons" (ngModelChange)="bigButtonsChange($event)"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Полукруглые кнопки</ion-label>
+      <ion-toggle color="secondary" [(ngModel)]="roundButtons" (ngModelChange)="roundButtonsChange($event)"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Кнопки списком</ion-label>
+      <ion-toggle color="danger" [(ngModel)]="listButtons" (ngModelChange)="listButtonsChange($event)"></ion-toggle>
+    </ion-item>
+  </ion-list>
+</ion-content>

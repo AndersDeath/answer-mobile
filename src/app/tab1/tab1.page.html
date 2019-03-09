@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Ответник
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="block" color="danger" size="large" (click)="goToTab2()" *ngIf="isPress">
+    Куда я попал? Узнать!
+  </ion-button>
+
+  <ion-grid style="text-align: center;">
+    <ion-row>
+      <ion-col>
+        <ion-button [expand]="listButtons" [shape]="roundButtons" [color]="item.color" [size]="bigButtons" *ngFor="let item of commands" (click)="playAudio(item.cmd)">{{item.text
+          }}</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
