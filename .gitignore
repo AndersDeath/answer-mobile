@@ -12,7 +12,9 @@ log.txt
 .vscode/
 npm-debug.log*
 build.json
+build-release.json
 test.keystore
+otvetnik.keystore
 
 .idea/
 .ionic/
