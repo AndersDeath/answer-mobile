@@ -18,7 +18,7 @@
     "android-platform-remove": "cordova platform remove android",
     "android-emulate": "ionic cordova emulate android --release --buildConfig=build.json",
     "move": "dorje --project='otvetnik' --move='release'",
-    "full-build": "npm run android-prepare && npm run android-build-release && npm run move"
+    "full-build": "npm run android-platform-remove && npm run android-platform-add && npm run android-prepare && npm run android-build-release && npm run move"
   },
   "private": true,
   "dependencies": {
